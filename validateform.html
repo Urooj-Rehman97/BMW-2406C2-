@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="JS/DOM.js"></script>
+    <style>
+       
+        p{
+            color:red;
+            font-size: 14px;
+            margin-top:0px;
+        }
+        .error{
+            border:2px solid red;
+            width:200px;
+            height:30px;
+        }
+        .before{
+            display:none;
+        }
+        .display{
+            display:block;
+            border:2px solid black;
+            height:300px;
+            width:300px;
+            padding:20px;
+        }
+    </style>
+</head>
+<body>
+            <input type="text" placeholder="UserName" id="name" required><br>
+        <p id="nameerror"></p>
+        <input type="email" placeholder="User email" id="email"><br>
+        <p id="emailerror"></p>
+        <input type="password" placeholder="User Password" id="password"><br>
+        <p id="passworderror"></p>
+        <input type="submit" onclick="validate()">
+
+        <!-- <div id="display" class="before">
+            <h1>Info</h1>
+         <span id="d_name"></span><br><br>
+         <span id="d_email"></span><br><br>
+         <span id="d_password"></span>
+         <form action="">
+            <input type="submit" value="Verified">
+         </form>
+        </div> -->
+ 
+</body>
+</html>

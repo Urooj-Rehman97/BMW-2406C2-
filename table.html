@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border:2px solid green;
+            text-align:center;
+            margin:auto;
+            margin-top:50px;
+            outline:none;
+
+        }
+        caption{
+            font-size: 32px;
+            font-weight: bold;
+            color:green;
+        }
+       table td{
+        height: 20px;
+        padding:10px;
+       }
+       table th{
+        height:40px;
+        padding:10px;
+       }
+       /* table tr{
+        vertical-align: bottom;
+
+       } */
+    </style>
+</head>
+<body>
+    <table border="1" cellspacing="0px">
+        <caption>Marksheet</caption>
+        <tr>
+            <th>Name</th>
+            <th>Marks</th>
+            <th>Percentage</th>
+        </tr>
+        <tr>
+            <td colspan="2">abc</td>
+            <!-- <td>455</td> -->
+            <td>80%</td>
+        </tr>
+        <tr>
+            <td rowspan="2">xyz</td>
+            <td>232</td>
+            <td>45%</td>
+        </tr>
+        <tr>
+            <!-- <td>mno</td> -->
+            <td>423</td>
+            <td>77%</td>
+        </tr>
+    </table>
+</body>
+</html>

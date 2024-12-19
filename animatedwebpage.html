@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- aos links -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        /* navbar start */
+        * {
+            margin: 0;
+        }
+
+        .nav {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            /* border:2px solid black; */
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            width: 35%;
+            height: 40px;
+            /* border:2px solid black; */
+
+        }
+
+        .links {
+            width: 60%;
+            height: 40px;
+            margin-top: 10px;
+            /* border:2px solid black; */
+
+
+        }
+
+        .links ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        .links ul li a {
+            text-decoration: none;
+            color: chocolate;
+
+            font-family: cursive;
+        }
+
+        .links ul li a:hover {
+            font-weight: bold;
+            color: royalblue;
+
+        }
+
+        .btn1 {
+            width: 80px;
+            height: 35px;
+            background-color: transparent;
+            border: 2px solid chocolate;
+            color: chocolate;
+            border-radius: 10px;
+            transition: all;
+            transition-duration: 2s;
+        }
+
+        .btn2 {
+            width: 80px;
+            height: 35px;
+            background-color: chocolate;
+            border: none;
+            color: white;
+            border-radius: 10px;
+            transition: all;
+            transition-duration: 2s;
+        }
+
+        .btn1:hover {
+            width: 90px;
+            height: 40px;
+            background-color: chocolate;
+            border: none;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .btn2:hover {
+            width: 90px;
+            height: 40px;
+            background-color: transparent;
+            border: 2px solid chocolate;
+            color: chocolate;
+            border-radius: 10px;
+        }
+
+        /* navbar end */
+
+        /* banner start */
+        .banner {
+            width: 100%;
+            height: 500px;
+            background-image: url(images/pattern1.jpg);
+            background-size: cover;
+            animation-name: banner_ani;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+            display:flex;
+            justify-content: center;
+           align-items: center;
+        }
+
+        @keyframes banner_ani {
+            0% {
+                background-image: url(images/pattern1.jpg);
+            }
+
+            20% {
+                background-image: url(images/pattern2.jpg);
+            }
+
+            50% {
+                background-image: url(images/pattern3.jpg);
+            }
+
+            80% {
+                background-image: url(images/pattern4.jpg);
+            }
+
+            100% {
+                background-image: url(images/pattern5.jpg);
+            }
+        }
+       .text{
+        width:50%;
+        height:300px;
+        /* border: 2px solid white; */
+        padding:0px 30px;
+        box-sizing: border-box;
+        background-color: rgba(255, 255, 255, 0.274);
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px  grey;
+       
+        
+       }
+       .text h1{
+        margin-top:90px;
+        margin-bottom:20px;
+       }
+        /* banner end */
+
+        /* card start */
+        .cards{
+    width:100%;
+    height:600px;
+    /* border:2px solid green; */
+    display:flex;
+    align-items: center;
+}
+
+.card{
+    width:200px;
+    height:200px;
+    border:2px solid chocolate;
+    margin-left:110px;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:chocolate;
+    transition-property: background-color color border border-radius;
+    transition-duration: 2s;
+}
+
+.cards a{
+    text-decoration: none;
+}
+.card:hover{
+    background-color: chocolate;
+    color:white;
+    border:none;
+    border-radius: 100px;
+}
+        /* card end */
+    </style>
+</head>
+
+<body>
+    <!-- navbar start -->
+
+    <div class="nav">
+        <div class="logo"><span
+                style="font-weight: bold; font-size: 30px; font-family: cursive; color:chocolate">Cart</span><span
+                style="font-weight: bold; font-size: 24px; font-family: cursive; color:royalblue">ify</span></div>
+        <div class="links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="signup.html"><button class="btn1">Sign Up</button></a></li>
+                <li><a href="#"><button class="btn2">Log in</button></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- navbar end -->
+
+    <!-- banner start -->
+    <div class="banner">
+        <div class="text">
+            <h1>Cartify-Online Shopping Cart</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora earum aspernatur dolores non asperiores
+                iure! Accusantium iste sequi quo, eveniet nisi nulla quis fugiat reiciendis ut cumque eum temporibus
+                dolor!</p>
+        </div>
+    </div>
+    <!-- banner end -->
+
+    <!-- card start -->
+    <div class="cards">
+        <a href="#">   <div class=" card card1"  data-aos="flip-left" data-aos-duration="10s"><h2>Accesories</h2>
+        </div></a>
+       <a href="#"><div class=" card card2" data-aos="flip-up" data-aos-duration="10s"><h2>Mobile Phones</h2></div></a>
+        <a href="#">   <div class=" card card3" data-aos="flip-right" data-aos-duration="10s"><h2>Laptop/Tablets</h2></div></a>
+       </div>
+    <!-- card end -->
+    <script>
+        AOS.init();
+      </script>
+</body>
+
+</html>

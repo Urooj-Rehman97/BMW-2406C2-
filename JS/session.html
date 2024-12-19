@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="canonical" href="htpps/html/session.html"> -->
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="User name" id="name"><br><br>
+    <input type="submit" onclick="save()" >
+
+    <script>
+        function save(){
+              let name = document.getElementById("name").value;
+              sessionStorage.setItem("username",name);
+              location.href = "welcome.html";
+
+        }
+    </script>
+</body>
+</html>

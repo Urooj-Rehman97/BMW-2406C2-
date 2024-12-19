@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* descendant Selector */
+        /* .main p{
+            background-color: grey;
+            color:maroon;
+        } */
+
+        /* child Selector */
+        /* .main>p {
+            background-color: yellow;
+        } */
+
+        /* Adjacent Sibling Selector */
+        /* .main+p {
+            background-color: aquamarine;
+            color: brown;
+            font-size: 20px;
+        } */
+
+        /* General Sibling Selector */
+        /* .main~p{
+            background-color: aquamarine;
+            color:brown;
+            font-size: 20px;
+        } */
+        .p1::first-line{
+            background-color: yellow;
+
+        }
+        ul::first-line{
+            color:green;
+        }
+        /* h1::first-letter{
+            font-size: 50px;
+            color:red;
+        } */
+        h1::before{
+            content: url(images/logo.png);
+        }
+        h1:hover::after{
+            content: "Good Bye";
+            background-color: black;
+            color:yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Combinators</h1>
+    <div class="main">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum soluta corrupti consequatur? Sed cumque
+            distinctio temporibus. Eius reprehenderit vero obcaecati?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fugiat sequi. Neque perferendis ducimus
+            accusantium dolorum deserunt non tempora libero.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro tempora sit deserunt nisi consectetur dolorem
+            quisquam, tempore doloribus unde inventore?</p>
+    </div>
+    <p class="p1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, beatae. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Optio molestias laborum voluptatum architecto incidunt doloribus quam eius autem
+        quos expedita, quis labore culpa quisquam libero quo iste cupiditate velit ducimus error veritatis nostrum
+        possimus! Delectus, repellat? Perspiciatis, velit aspernatur. Laborum! Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Repudiandae, suscipit. Dolorem doloribus voluptatem quia maiores at maxime labore id non
+        error. Impedit cum officia adipisci dolorem nisi veniam pariatur beatae sed laudantium exercitationem quibusdam,
+        quisquam totam fugiat doloremque possimus tempore odio magnam magni quae tempora, assumenda sint, ab tenetur.
+        Quis.</p>
+    <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, delectus.</p>
+    <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, delectus.</p>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAAVASCRIPT</li>
+        <li>BootStrap</li>
+        <li>jQuery</li>
+    </ul>
+</body>
+
+</html>

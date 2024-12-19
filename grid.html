@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            width: 100%;
+            /* height:700px; */
+            /* border:2px solid black; */
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-template-rows: 60px 80px 150px 150px 150px auto;
+            row-gap: 30px;
+            column-gap: 100px;
+        }
+
+        .items {
+            width: 100%;
+        }
+
+        .item1 {
+            background-color: grey;
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+
+        .item2 {
+            background-color: aqua;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        .item3 {
+            background-color: tomato;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+
+        .item4 {
+            background-color: teal;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 5;
+            grid-row-end: 6;
+        }
+
+        .item5 {
+            background-color: salmon;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 5;
+            grid-row-end: 6;
+        }
+
+        .item6 {
+            background-color: grey;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 6;
+            grid-row-end: 7;
+            display:flex;
+            justify-content: center;
+        }
+
+        .item7 {
+            background-color: steelblue;
+            /* grid-column-start: 3;
+            grid-column-end: 4; */
+            grid-column: 3/4;
+            /* grid-row-start: 5;
+            grid-row-end: 6; */
+            grid-row: 5/6;
+        }
+
+        .item6 ul li{
+            display:inline;
+            font-size: 30px;
+            /* color:white; */
+            margin-left:50px;
+            
+
+        }
+
+        /* Navbar */
+        .navbar {
+            width: 100%;
+            height: 80px;
+            /* background-color: black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* position:fixed; */
+            border-bottom: 2px solid red;
+        }
+
+        .logo {
+            width: 30%;
+            height: 40px;
+            /* border:2px solid red; */
+        }
+
+        .logo h1 {
+            color: red;
+        }
+
+        .links {
+            width: 60%;
+            height: 40px;
+            /* border:2px solid red; */
+        }
+
+        .links ul li {
+            display: inline;
+            margin-left: 20px;
+
+
+        }
+
+        .links ul {
+            float: right;
+            padding-top: 10px;
+        }
+
+        .links ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .links ul li a:hover {
+            color: red;
+        }
+
+        body {
+            /* background-image: url(../images/pattern1.jpg); */
+            background-size: cover;
+            background-image: url(../images/background.jpg);
+        }
+
+        .btn1 {
+            width: 100px;
+            height: 30px;
+            background-color: red;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .btn2 {
+            width: 100px;
+            height: 30px;
+            border: 2px solid red;
+            border-radius: 20px;
+            color: red;
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: transparent;
+        }
+
+        .btn1:hover {
+            background-color: transparent;
+            border: 2px solid red;
+            color: red;
+        }
+
+        .btn2:hover {
+            background-color: red;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container"> -->
+    <div class="items item1">
+        <h1 style="text-align: center;">Visual Creations</h1>
+    </div>
+    <div class="items item2">
+        <div class="navbar">
+            <div class="logo">
+                <!-- <img src="images/logo.png" alt="Logo" width="40px"> -->
+                <h1><span style="font-size: 50px;">M</span><span style="color:white;">obile</span></h1>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="basictags.html" target="_blank">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#"><button class="btn1">Sign up</button></a></li>
+                    <li><a href="#"><button class="btn2">Login</button></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="items item3">Sidebar</div>
+    <div class="items item4">Content 1</div>
+    <div class="items item5">Content 2</div>
+    <div class="items item7">Content 3</div>
+    <div class="items item6">
+        <ul>
+            <li><i class="fa-brands fa-facebook"></i></li>
+            <li><i class="fa-brands fa-square-instagram"></i></li>
+            <li><i class="fa-brands fa-square-x-twitter"></i></li>
+        </ul>
+    </div>
+    <!-- </div> -->
+</body>
+
+</html>

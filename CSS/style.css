@@ -1,0 +1,31 @@
+.box{
+    width:400px;
+    height:400px;
+    border: 2px solid black;
+    margin:auto;
+    padding:100px;
+    box-sizing: border-box;
+    background-image: url(../images/pattern1.jpg);
+    background-size: cover;
+    color:white;
+    font-family:cursive;
+    
+}
+.circle{
+    width:200px;
+    height:200px;
+    border: 2px solid black;
+  margin-top:100px;
+  border-radius:100%;
+}
+/* body{
+    background-image: url(../images/rose.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+button{
+    margin-left:600px;
+    margin-top:20px;
+    height:30px;
+    font-weight: bold;
+}

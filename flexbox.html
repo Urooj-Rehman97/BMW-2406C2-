@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            background-color: aqua;
+        }
+      .container{
+        width:80%;
+        height:400px;
+        border:2px solid black;
+        margin:auto;
+        display:flex;
+        justify-content:space-between;
+        align-items: flex-start;
+        /* flex-direction: row;
+        flex-wrap: wrap; */
+      }
+
+      .item{
+        width:150px;
+        height:150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .item1{
+        background-color: teal;
+        order:-2;
+      }
+      .item2{
+        background-color:thistle;
+        /* align-self:center; */
+        order:1;
+
+      }
+      .item3{
+        background-color:tomato;
+        /* align-self:flex-end; */
+        /* flex-grow: 1; */
+        /* font-size: 20px; */
+        order:-1;
+      }
+      .item4{
+        background-color:springgreen;
+        /* align-self:center; */
+      }
+      .item5{
+        background-color:violet;
+        /* flex-grow:1; */
+        /* font-size: 14px; */
+      }
+    </style>
+</head>
+<body>-
+    <h1>Flexbox</h1>
+    <div class="container">
+        <div class="item item1">Box One</div>
+        <div class="item item2">Box Two</div>
+        <div class="item item3">Box Three</div>
+        <div class="item item4">Box Four</div>
+        <div class="item item5">Box Five</div>
+    </div>
+</body>
+</html>
